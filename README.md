@@ -8,8 +8,9 @@ In your IDE of choice, open the console and enter 'npm run dev' then open [http:
 
 ## Pre configure
 
-This application requires a google maps javascript api.
+This application requires a google maps javascript key.
 In the next.config.js file replace the string 'my_google_apiKey' with the one generated from your Google dashboard account.
+This is required in order to view a map on the accommodation information page when clicking on the address information.
 
 
 ## Uses modern react methods
