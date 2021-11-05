@@ -3,7 +3,7 @@
 
 This application requires a google maps javascript api.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+In your IDE of choice, open the console and enter 'npm run dev' then open [http://localhost:3000](http://localhost:3000) with your browser to see the result after a few moments.
 
 
 ## Pre configure
