@@ -2,7 +2,6 @@
 ## Kaboodle technical test
 
 This application requires a google maps javascript api.
-In the next.config.js file replace the string 'my_google_apiKey' with the one generated from Google maps.
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
