@@ -1,0 +1,11 @@
+.starRating__Wrapper {
+
+  .star {
+    cursor: pointer;
+    fill: #aaa;
+
+    &.set {
+      fill: gold;
+    }
+  }
+}

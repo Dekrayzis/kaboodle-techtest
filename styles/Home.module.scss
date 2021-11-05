@@ -1,0 +1,94 @@
+.container {
+  padding: 0 2rem;
+
+  @media (max-width: 40em) {
+    width: 100%;
+    padding: 0 1rem;
+  }
+}
+
+.main {
+  min-height: 100vh;
+  padding: 4rem 0;
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0 auto;
+  width: 70%;
+
+  @media (max-width: 40em) {
+    padding: 0rem 0;
+    width: 100%;
+  }
+
+  .properties {
+    display: flex !important;
+    justify-content: flex-start !important;
+    margin: 7rem auto 0;
+    width: 100%;
+
+    .properties__wrapper {
+      color: #1c1c1c;
+      font-family: $fontFamily;
+      font-size: 2.5rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      line-height: 2.375rem;
+      margin: 0;
+      text-align: left;
+
+      @media (max-width: 40em) {
+        font-size: 2.3rem;
+        line-height: 3.375rem;
+      }
+
+      .properties__title {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-bottom: 2rem;
+      }
+
+      .properties__description {
+        margin-top: 1rem;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        text-align: left;
+        color: #1c1c1c;
+        font-family: $fontFamily;
+        font-weight: 500;
+      }
+    }
+  }
+
+  .topToolBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 0.5rem;
+    margin: 2rem 0 1rem;
+
+    .topToolBar_left {
+      font-size: 0.875rem;
+      line-height: 0.875rem;
+      font-family: $fontFamily;
+      cursor: pointer;
+      flex: 0 0 auto;
+      width: 50%;
+    }
+
+    .topToolBar_right {
+      display: flex;
+      justify-content: flex-end;
+      width: 50%;
+    }
+  }
+
+  .mainContent {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+  }
+}

@@ -1,0 +1,94 @@
+.accommodation_header {
+  display: flex;
+  width: 100%;
+
+  .header_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 20rem;
+    margin: 0 auto;
+    padding: 1%;
+    width: 100%;
+
+    @media (max-width: 40em) {
+      flex-direction: column;
+    }
+
+    button {
+      @media (max-width: 40em) {
+        position: absolute;
+        top: 80px;
+        right: 20px;
+      }
+    }
+
+    .sectionHeaderMain {
+      display: flex;
+      flex-direction: column;
+      padding-top: 0;
+      padding-bottom: 0;
+
+      .btnMapLink {
+        margin: 0.5rem 0;
+      }
+
+      .resortNameWrapper {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        @media (max-width: 40em) {
+          flex-wrap: wrap;
+        }
+
+        .resortName {
+          font-weight: 600;
+          font-size: 2.5rem;
+          line-height: 1.75rem;
+          margin: 0.6rem 1rem 0.75rem 0;
+
+          @media (max-width: 40em) {
+            font-size: 1.9rem;
+          }
+        }
+      }
+
+      .address {
+        cursor: pointer;
+
+        .btnMapLink {
+          display: flex;
+          align-items: center;
+          background-color: transparent;
+          color: #0098dd;
+          border: 0;
+          padding: 0;
+
+          .streeAddress {
+          }
+
+          .city,
+          .province,
+          .country {
+            margin-left: 0.25rem;
+          }
+
+          @media (max-width: 40em) {
+            .city,
+            .province,
+            .country {
+              font-size: 0.8rem;
+            }
+          }
+        }
+
+        h2 {
+          font-size: 2rem;
+          line-height: 1.25rem;
+          margin-top: 0;
+        }
+      }
+    }
+  }
+}

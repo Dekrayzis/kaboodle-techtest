@@ -11,6 +11,16 @@ a {
   text-decoration: none;
 }
 
-* {
+*,
+*:after,
+*:before {
   box-sizing: border-box;
+}
+
+ul {
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  line-height: 1.2rem;
 }

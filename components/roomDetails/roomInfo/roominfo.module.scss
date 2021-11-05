@@ -1,0 +1,147 @@
+.roomInfo_roomBox {
+  box-shadow: 0 0.125rem 0.125rem 0 rgb(0 0 0 / 10%);
+  color: #1c1c1c;
+  min-height: 250px;
+  margin: 2rem auto;
+  width: 90%;
+  position: relative;
+  overflow: hidden;
+  border-top: 5px solid #a555ee;
+
+  .roomInfo_innercontent {
+    padding: 0 1.25rem 1.25rem 1.25rem;
+    background-color: #fff;
+    z-index: 1;
+
+    @media (max-width: 40em) {
+      padding: 0 1.25rem 5rem 1.25rem;
+    }
+
+    .roomInfo_header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      h3 {       
+            
+        @media (max-width: 40em) {
+          font-size: 0.8rem;
+        }
+      }
+      
+      span {
+        font-weight: 500;
+
+        @media (max-width: 40em) {
+          font-size: 0.8rem;
+          text-align: right;
+          width: 30%;
+        }
+      }
+    }
+
+    .roomInfo_content {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+
+      @media (max-width: 40em) {
+        grid-template-columns: 1fr;
+        width: 100%;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .roomDesc {
+        display: flex;
+        justify-content: flex-start;
+        position: relative;
+
+        .occupancyList {
+          flex-direction: column;
+
+          li {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 2rem;
+
+            @media (max-width: 40em) {
+              font-size: 0.8rem;
+              margin-bottom: 1.4rem;
+            }
+
+            .roomDesc_label {
+              display: block;
+              font-weight: 700;
+            }
+          }
+        }
+
+        .facilityList {
+          flex-direction: column;
+          position: absolute;
+          bottom: 1rem;
+
+          @media (max-width: 40em) {
+            bottom: -4.5rem;
+          }
+
+          h2 {
+            margin-bottom: 0;
+            font-size: 1.1rem;
+
+            @media (max-width: 40em) {
+              font-size: 0.8rem;
+            }
+          }
+
+          ul {
+            display: flex;
+            flex-direction: row;
+
+            li {
+              margin-right: 1rem;
+
+              @media (max-width: 40em) {
+                font-size: 0.8rem;
+              }
+            }
+          }
+        }
+
+        .priceRateBox {
+          position: absolute;
+          bottom: 7rem;
+          right: 3rem;
+
+          @media (max-width: 40em) {
+            font-size: 0.8rem;
+            bottom: 2rem;
+            right: 0;
+          }
+
+          .priceBox {
+            display: flex;
+            align-items: center;
+
+            @media (max-width: 40em) {
+              font-size: 0.8rem;
+            }
+
+            .ratePrice {
+              font-size: 2rem;
+              font-weight: 700;
+              margin-right: 0.5rem;
+            }
+            .currency {
+            }
+            .taxInfo {
+            }
+          }
+        }
+      }
+    }
+  }
+}

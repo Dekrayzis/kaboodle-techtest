@@ -1,0 +1,43 @@
+.primaryBtn {    
+    background-color: black;
+    border: 1px solid;
+    border-color: black;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    box-sizing: border-box;
+
+    vertical-align: middle;
+    position: relative;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-flex;
+    height: 36px;
+    width: 166px;
+    max-width: 135px;
+    min-width: 60px;
+    padding: 4px 16px;
+    line-height: 20px;
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 500;
+    transition: background-color 0.4s;
+
+    @media (max-width: 40em) {
+        padding: 4px 8px;
+        right: -10px;
+    }
+
+    @media (max-width: 134rem) {
+        width: 166px;
+        max-width: 180px;
+    }
+
+    &:hover {
+        background-color: lighten(black, 13);
+    }
+}

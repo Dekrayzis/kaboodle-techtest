@@ -1,0 +1,17 @@
+.formSelect {
+    padding: 1rem 0;
+    position: relative;
+    width: 100%;
+
+    .dropdown__label{
+        position: absolute;
+        top: -5px;
+    }
+
+    .dropdown {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+
+        .dropdown__option {}
+    }
+}

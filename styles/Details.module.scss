@@ -1,0 +1,88 @@
+.accommodationDetails {
+  background-color: #f4f4f4;
+  min-height: 100vh;
+  width: 100%;
+
+  .accomodationDetails_container {
+    padding-top: 10rem;
+    width: 60%;
+    margin: 0 auto;
+    min-height: 100vh;
+
+    @media (max-width: 40em) {
+      width: 90%;
+    }
+
+    .resortOverview {
+      display: flex;
+      justify-content: space-between;
+
+      @media (max-width: 40em) {
+        flex-direction: column;
+      }
+
+      .resortImage {
+        margin: 0.25rem 0 0 1rem;
+
+        @media (max-width: 40em) {
+          margin: 0;
+
+          img {
+            width: 100%;
+            height: 250px;
+          }
+        }
+
+        img {
+        }
+      }
+
+      .resortDescription {
+        margin: 0 1rem;
+      }
+    }
+
+    .resortFacilities {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      margin: 0.25rem 0 0 1rem;
+
+      h2 {
+        margin-bottom: 0;
+      }
+
+      .facilityList {
+
+        @media (max-width: 40em) {
+          flex-direction: column;
+          align-items: flex-start;
+          margin-bottom: 2rem;          
+        }
+
+        li {
+          margin-right: 2rem;
+        }
+      }
+    }
+  }
+}
+
+.accommodationDetails__room {
+  background-color: #f4f4f4;
+  min-height: 100vh;
+  width: 100%;
+
+  .accomodationDetails__roomsContainer {
+    padding-top: 10rem;
+    width: 60%;
+    margin: 0 auto;
+    min-height: 100vh;
+    padding-bottom: 1rem;
+
+    @media (max-width: 40em) {
+      padding-top: 7rem;
+      width: 100%;
+    }
+  }
+}
